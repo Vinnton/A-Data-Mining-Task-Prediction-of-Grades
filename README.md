@@ -1,6 +1,6 @@
 # Data Mining Task: Prediction of Grades
 Clickstream is important for mining user's latent behavior. As for online learning platform, the lectuerer can monitor students' learning pattern by clickstream pattern analysis. Video-clickstream records students' click actions when watching lecture videos. A general video-clickstream log file contains the following events: load_video, play_video, pause_video, seek_video, stop_video, and speed_change_video.
-In this part, the project predicts students' final exam performance, passed or failed, based on their clickstream event log from 63 lecture videos in the same online learning semester.
+\\In this part, the project predicts students' final exam performance, passed or failed, based on their clickstream event log from 63 lecture videos in the same online learning semester.
 
 The dataset including:
 1. TrainFeatures.csv: 5050 students' video clickstream log info covering 63 videos. You need to use it for training.
