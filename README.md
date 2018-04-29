@@ -15,14 +15,13 @@ The idea to realize the project and how to run thw code:
 Coding environment: Python 3.6, IDE: Pycharm
 Steps of the solution:
 1.  Preprocessing of the data and features generation
-    1.1 Mapping the long string user_id/ video_id into simple number id;
-    1.2 Delete the attribute session since the attribute do nothing to the results;
-    1.3 Calculating the operation times on each video for each user, for example, if user A loaded and then played video 1, then the operation times is 2. Hence the attribute new_speed, old_speed, new_time, old_time are already considered in this situation;
-    1.4 Generate a new file TrainDataFinal.csv to store the data.
+a. Mapping the long string user_id/ video_id into simple number id;
+b. Delete the attribute session since the attribute do nothing to the results;
+c. Calculating the operation times on each video for each user, for example, if user A loaded and then played video 1, then the operation times is 2. Hence the attribute new_speed, old_speed, new_time, old_time are already considered in this situation;
+d. Generate a new file TrainDataFinal.csv to store the data.
 After the steps above, we could have a table as below; Here V1 stands for Video1. Same preprocessing period is also implemented on TestFeatures.csv, and a new TestDataFinal.csv would be generated. 
-2. Classification method
-    Several classification methods are compared as below, with a cross_validation of 4:1.
+2. Classification method: Several classification methods are compared as below, with a cross_validation of 4:1.
 3. How to run the code:
-    3.1 Firstly, put all the data files into the directory where contains the python files;
-    3.2 Run TrainDataPreprocessing.py and TestDataPreprocessing.py first to generate TrainDataFinal.csv and TestDataFinal.csv. The reason of separating preprocessing and training process is to prevent time wasting while changing models and factors in training process;
-    3.3 Finally run Train.py to generate accuracy of each classification method and a prediction of test data prediction.csv.
+a. Firstly, put all the data files into the directory where contains the python files;
+b. Run TrainDataPreprocessing.py and TestDataPreprocessing.py first to generate TrainDataFinal.csv and TestDataFinal.csv. The reason of separating preprocessing and training process is to prevent time wasting while changing models and factors in training process;
+c. Finally run Train.py to generate accuracy of each classification method and a prediction of test data prediction.csv.
